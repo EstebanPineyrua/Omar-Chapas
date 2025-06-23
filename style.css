@@ -4,7 +4,7 @@
     }
 
     header img {
-    height: 150px;
+    height: 90px;
     width: auto;
     }
     
@@ -87,7 +87,7 @@
         font-size: 1.2rem;
       }
           header img {
-            height: 136px;
+            height: 80px;
             width: auto;
         }
   
@@ -107,6 +107,7 @@
     }
 
 
+
 .logo-omar {
   height: 60px;
   width: auto;
@@ -115,7 +116,7 @@
 
 .navbar {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  height: 150px;
+  height: 90px;
   width: 10000px;
 
 }
