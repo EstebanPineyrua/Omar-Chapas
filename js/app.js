@@ -16,11 +16,6 @@
             }
         }
 
-        /* ========================================
-   JAVASCRIPT DEL CARRUSEL
-   Agregá esto en tu <script>, DESPUÉS de la función cargarProductos()
-   ======================================== */
-
 // Variables del carrusel
 let currentSlide = 0;
 const slideInterval = 5000; // Cambia cada 5 segundos
@@ -204,7 +199,7 @@ function resetAutoplay() {
         // Contactar
         function contactar(producto) {
         const telefono = "5491127266120";
-        const mensaje = `Vengo desde la web y queria consultar sobre ${producto}`;
+        const mensaje = `Hola! Vengo desde la web y queria consultar sobre ${producto}`;
         const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 
         window.open(url, "_blank");
