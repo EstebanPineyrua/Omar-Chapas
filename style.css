@@ -129,15 +129,11 @@
             background: #005a8c;
         }
 
-        /* ========================================
-   ESTILOS DEL CARRUSEL
-   Agregá esto en tu CSS, después de los estilos del hero
-   ======================================== */
-
+        /* Carousel */
 .carousel-section {
     max-width: 1280px;
     margin: 60px auto;
-    padding: 0 32px;
+    padding: 0 8px;
 }
 
 .carousel-container {
