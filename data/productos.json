@@ -17,8 +17,13 @@
     },
     {
       "imagen": "images/chapa-carrusel3.jpeg",
-      "titulo": "Más de 20 años de experiencia",
-      "descripcion": "Trabajos garantizados y asesoramiento técnico profesional"
+      "titulo": "Tinglados a medida",
+      "descripcion": "Estructura, zingueria y chapas de primera calidad para un resultado duradero y confiable"
+    },
+    {
+      "imagen": "images/chapa-carrusel3.jpeg",
+      "titulo": "Lideres en Mercado Libre",
+      "descripcion": "Contamos con MercadoLíder Platinum con mas de 5.000 ventas"
     }
   ],
   "productos": [
