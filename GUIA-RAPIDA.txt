@@ -1,0 +1,86 @@
+GUÍA RÁPIDA - OMAR CHAPAS
+==========================
+
+PASO 1: ESTRUCTURA DE ARCHIVOS
+-------------------------------
+Asegurate de tener esta estructura:
+
+📁 Tu carpeta del sitio/
+  📄 index.html
+  📄 productos.json
+  🖼️ logo-omar-chapas.png
+  🖼️ taller-omar-chapas.jpg
+  📁 images/
+     🖼️ chapa-trapezoidal.jpg
+     🖼️ chapa-sinusoidal.jpg
+     🖼️ chapa-lisa.jpg
+     🖼️ canaletas.jpg
+     🖼️ caños-bajada.jpg
+     🖼️ cumbreras.jpg
+     🖼️ babetas.jpg
+     🖼️ accesorios.jpg
+
+
+PASO 2: AGREGAR FOTOS
+----------------------
+1. Sacá fotos de tus productos con buena luz
+2. Guardá las fotos con los nombres exactos de arriba
+3. Poné todas las fotos en la carpeta "images/"
+4. Si una foto no existe, se mostrará un ícono por defecto
+
+
+PASO 3: EDITAR PRODUCTOS
+-------------------------
+Abrí productos.json con un editor de texto y modificá:
+
+- "nombre": el nombre que aparece en la card
+- "descripcion": texto descriptivo
+- "especificaciones": lista de características
+- "imagen": ruta a la foto (images/nombre.jpg)
+
+
+PASO 4: AGREGAR UN PRODUCTO NUEVO
+----------------------------------
+Copiá y pegá este bloque en productos.json:
+
+    {
+      "id": "nuevo-producto",
+      "nombre": "Nombre del producto",
+      "categoria": "chapas",
+      "descripcion": "Descripción del producto",
+      "imagen": "images/mi-producto.jpg",
+      "especificaciones": [
+        "Característica 1",
+        "Característica 2",
+        "Característica 3"
+      ]
+    }
+
+⚠️ IMPORTANTE: No olvides poner una coma (,) antes si no es el último producto
+
+
+PASO 5: PROBAR EN LOCAL
+------------------------
+1. Abrí index.html con tu navegador
+2. Verificá que se vean todos los productos
+3. Probá los filtros (Chapas, Zinguería, Accesorios)
+4. Si algo no funciona, revisá la consola (F12)
+
+
+PASO 6: SUBIR AL SERVIDOR
+--------------------------
+Subí TODA la carpeta al servidor manteniendo la estructura.
+No subas archivos sueltos, subí todo junto.
+
+
+¿PROBLEMAS?
+-----------
+- Fotos no se ven → Verificá nombres y rutas en productos.json
+- Productos no cargan → Abrí F12 y mirá la consola
+- Logo no aparece → Verificá que logo-omar-chapas.png esté en la raíz
+
+
+CONTACTO EN EL SITIO
+--------------------
+Para agregar tu teléfono/email, editá la función contactar() 
+en index.html (está al final del archivo)

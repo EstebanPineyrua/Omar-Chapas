@@ -1,0 +1,130 @@
+{
+  "slides": [
+    {
+      "imagen": "images/chapa-carrusel.jpeg",
+      "titulo": "Chapas de alta calidad mano",
+      "descripcion": "Galvanizadas y prepintadas en todos los calibres"
+    },
+    {
+      "imagen": "images/chapa-carrusel1.jpeg",
+      "titulo": "Zinguería a medida",
+      "descripcion": "Canaletas, caños y accesorios fabricados según tu proyecto"
+    },
+    {
+      "imagen": "images/chapa-carrusel2.jpeg",
+      "titulo": "Entrega en obra",
+      "descripcion": "Transporte propio a toda la zona de Buenos Aires"
+    },
+    {
+      "imagen": "images/chapa-carrusel3.jpeg",
+      "titulo": "Más de 20 años de experiencia",
+      "descripcion": "Trabajos garantizados y asesoramiento técnico profesional"
+    }
+  ],
+  "productos": [
+    {
+      "id": "chapa-trapezoidal",
+      "nombre": "Chapa trapezoidal",
+      "categoria": "chapas",
+      "descripcion": "Chapa acanalada para techos y cerramientos. Disponible en varios espesores y largos a medida.",
+      "imagen": "images/chapa-trape.png",
+      "especificaciones": [
+        "Calibres: 0.4mm, 0.5mm, 0.6mm",
+        "Largos a medida hasta 12m",
+        "Galvanizada o prepintada",
+        "Varios colores disponibles"
+      ]
+    },
+    {
+      "id": "chapa-sinusoidal",
+      "nombre": "Chapa sinusoidal",
+      "categoria": "chapas",
+      "descripcion": "Chapa ondulada ideal para techos. Mayor resistencia y mejor escurrimiento de agua.",
+      "imagen": "images/chapa-sinusoidal.jpg",
+      "especificaciones": [
+        "Calibres: 0.4mm, 0.5mm, 0.6mm",
+        "Largos estándar y a medida",
+        "Galvanizada o prepintada",
+        "Onda de 76mm"
+      ]
+    },
+    {
+      "id": "chapa-lisa",
+      "nombre": "Chapa lisa",
+      "categoria": "chapas",
+      "descripcion": "Chapa plana para revestimientos, cielorrasos y cerramientos laterales.",
+      "imagen": "images/chapa-lisa.jpg",
+      "especificaciones": [
+        "Calibres: 0.4mm a 1.0mm",
+        "Corte a medida",
+        "Galvanizada o prepintada",
+        "Terminación mate o brillante"
+      ]
+    },
+    {
+      "id": "canaletas",
+      "nombre": "Canaletas",
+      "categoria": "zingueria",
+      "descripcion": "Canaletas para desagüe pluvial. Fabricación estándar y a medida según proyecto.",
+      "imagen": "images/canaletas.jpg",
+      "especificaciones": [
+        "Medidas: 15cm, 20cm, 25cm, 30cm",
+        "Galvanizada o prepintada",
+        "Largos a pedido",
+        "Con o sin gancho"
+      ]
+    },
+    {
+      "id": "caños-bajada",
+      "nombre": "Caños de bajada",
+      "categoria": "zingueria",
+      "descripcion": "Caños pluviales redondos y cuadrados para evacuación de agua de techos.",
+      "imagen": "images/caños-bajada.jpg",
+      "especificaciones": [
+        "Redondos: 75mm, 100mm, 110mm",
+        "Cuadrados: 80x80mm, 100x100mm",
+        "Largos de 3m y 6m",
+        "Galvanizado o prepintado"
+      ]
+    },
+    {
+      "id": "cumbreras-limatesas",
+      "nombre": "Cumbreras y limatesas",
+      "categoria": "zingueria",
+      "descripcion": "Terminaciones para encuentro de aguas y bordes de techos. Diseños estándar y especiales.",
+      "imagen": "images/cumbreras.jpg",
+      "especificaciones": [
+        "Varios ángulos disponibles",
+        "Adaptable a todo tipo de chapa",
+        "Galvanizada o prepintada",
+        "Largos a medida"
+      ]
+    },
+    {
+      "id": "babetas-tapajuntas",
+      "nombre": "Babetas y tapajuntas",
+      "categoria": "zingueria",
+      "descripcion": "Piezas especiales para encuentros de techo con paredes y sellado de juntas.",
+      "imagen": "images/babetas.jpg",
+      "especificaciones": [
+        "Medidas personalizadas",
+        "Para cualquier tipo de chapa",
+        "Galvanizada o prepintada",
+        "Perfecta impermeabilización"
+      ]
+    },
+    {
+      "id": "fijaciones-accesorios",
+      "nombre": "Fijaciones y accesorios",
+      "categoria": "accesorios",
+      "descripcion": "Tornillos autoperforantes, ganchos, abrazaderas y todo lo necesario para la instalación.",
+      "imagen": "images/accesorios.jpg",
+      "especificaciones": [
+        "Tornillos con arandela de neoprene",
+        "Ganchos para canaletas",
+        "Abrazaderas para caños",
+        "Selladores y cintas"
+      ]
+    }
+  ]
+}

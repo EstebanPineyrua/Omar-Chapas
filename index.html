@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Chapas — Fábrica de Zinguería y Chapas | Bella Vista</title>
+    <link rel="icon" type="image/x-icon" href="logo-omar-chapas.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -30,201 +31,44 @@
         <a href="#catalogo" class="cta-button">Ver productos</a>
     </div>
 
+    <section class="carousel-section">
+    <div class="carousel-container">
+
+        <!-- Slides -->
+        <div class="carousel-wrapper" id="carouselWrapper">
+            <!-- Slides generados por JS -->
+        </div>
+
+        <!-- Controles -->
+        <div class="carousel-controls">
+            <button class="carousel-btn" onclick="moveCarousel(-1)" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <button class="carousel-btn" onclick="moveCarousel(1)" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+
+    </div>
+</section>
+
+
     <section id="catalogo">
         <div class="section-header">
             <h2>Productos</h2>
             <p>Fabricamos chapas y zinguería estándar y a medida. Todos nuestros productos están fabricados con materiales de primera calidad.</p>
         </div>
-        
-        <nav class="filter-nav">
-            <button class="filter-btn active" onclick="filterProducts('all')">Todo</button>
-            <button class="filter-btn" onclick="filterProducts('chapas')">Chapas</button>
-            <button class="filter-btn" onclick="filterProducts('zingueria')">Zinguería</button>
-            <button class="filter-btn" onclick="filterProducts('accesorios')">Accesorios</button>
-        </nav>
 
         <div class="catalog-grid" id="catalogGrid">
-            <div class="product-card" data-category="chapas">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Chapa trapezoidal</h3>
-                    <p class="product-description">Chapa acanalada para techos y cerramientos. Disponible en varios espesores y largos a medida.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Calibres: 0.4mm, 0.5mm, 0.6mm</li>
-                            <li>Largos a medida hasta 12m</li>
-                            <li>Galvanizada o prepintada</li>
-                            <li>Varios colores disponibles</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Chapa trapezoidal')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="chapas">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 3h18v18H3z"/>
-                        <path d="M3 9h18M3 15h18"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Chapa sinusoidal</h3>
-                    <p class="product-description">Chapa ondulada ideal para techos. Mayor resistencia y mejor escurrimiento de agua.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Calibres: 0.4mm, 0.5mm, 0.6mm</li>
-                            <li>Largos estándar y a medida</li>
-                            <li>Galvanizada o prepintada</li>
-                            <li>Onda de 76mm</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Chapa sinusoidal')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="chapas">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                        <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Chapa lisa</h3>
-                    <p class="product-description">Chapa plana para revestimientos, cielorrasos y cerramientos laterales.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Calibres: 0.4mm a 1.0mm</li>
-                            <li>Corte a medida</li>
-                            <li>Galvanizada o prepintada</li>
-                            <li>Terminación mate o brillante</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Chapa lisa')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="zingueria">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 12h18"/>
-                        <path d="M3 12l6-6M21 12l-6-6"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Canaletas</h3>
-                    <p class="product-description">Canaletas para desagüe pluvial. Fabricación estándar y a medida según proyecto.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Medidas: 15cm, 20cm, 25cm, 30cm</li>
-                            <li>Galvanizada o prepintada</li>
-                            <li>Largos a pedido</li>
-                            <li>Con o sin gancho</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Canaletas')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="zingueria">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="9"/>
-                        <path d="M12 3v18"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Caños de bajada</h3>
-                    <p class="product-description">Caños pluviales redondos y cuadrados para evacuación de agua de techos.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Redondos: 75mm, 100mm, 110mm</li>
-                            <li>Cuadrados: 80x80mm, 100x100mm</li>
-                            <li>Largos de 3m y 6m</li>
-                            <li>Galvanizado o prepintado</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Caños de bajada')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="zingueria">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12H3M21 6H3M21 18H3"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Cumbreras y limatesas</h3>
-                    <p class="product-description">Terminaciones para encuentro de aguas y bordes de techos. Diseños estándar y especiales.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Varios ángulos disponibles</li>
-                            <li>Adaptable a todo tipo de chapa</li>
-                            <li>Galvanizada o prepintada</li>
-                            <li>Largos a medida</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Cumbreras y limatesas')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="zingueria">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 20h16M4 20v-4M20 20v-4M4 16l8-12 8 12"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Babetas y tapajuntas</h3>
-                    <p class="product-description">Piezas especiales para encuentros de techo con paredes y sellado de juntas.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Medidas personalizadas</li>
-                            <li>Para cualquier tipo de chapa</li>
-                            <li>Galvanizada o prepintada</li>
-                            <li>Perfecta impermeabilización</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Babetas y tapajuntas')">Consultar precio</button>
-                </div>
-            </div>
-
-            <div class="product-card" data-category="accesorios">
-                <div class="product-image">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M12 1v6m0 6v6M1 12h6m6 0h6"/>
-                    </svg>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title">Fijaciones y accesorios</h3>
-                    <p class="product-description">Tornillos autoperforantes, ganchos, abrazaderas y todo lo necesario para la instalación.</p>
-                    <div class="product-specs">
-                        <div class="specs-title">Características</div>
-                        <ul class="specs-list">
-                            <li>Tornillos con arandela de neoprene</li>
-                            <li>Ganchos para canaletas</li>
-                            <li>Abrazaderas para caños</li>
-                            <li>Selladores y cintas</li>
-                        </ul>
-                    </div>
-                    <button class="contact-btn" onclick="contactar('Fijaciones y accesorios')">Consultar precio</button>
-                </div>
-            </div>
+            <!-- Los productos se cargan dinámicamente desde productos.json -->
         </div>
     </section>
 
@@ -262,15 +106,15 @@
                 <h3>Ubicación</h3>
                 <div class="contact-item">
                     <strong>Dirección</strong>
-                    <p>EON, Emilio Lamarca 1129<br>B1661 Bella Vista<br>Provincia de Buenos Aires</p>
+                    <p>Emilio Lamarca 1129<br>B1661 Bella Vista<br>Provincia de Buenos Aires</p>
                 </div>
             </div>
             <div class="contact-block">
                 <h3>Horarios</h3>
                 <div class="contact-item">
                     <strong>Lunes a Viernes</strong>
-                    <p>08:00 a 13:00 hs
-                    <br>14:00 a 17:00 hs
+                    <p>08:00 a 12:00 hs
+                    <br>13:00 a 17:00 hs
                     </p>
                 </div>
                 <div class="contact-item">
@@ -282,11 +126,11 @@
                 <h3>Comunicate</h3>
                 <div class="contact-item">
                     <strong>Teléfono</strong>
-                    <p>011 4252-3000</p>
+                    <a href="https://wa.me/5491127266120?text=Hola,%20quiero%20más%20información" target="_blank">Enviar Mensaje</a>
                 </div>
                 <div class="contact-item">
                     <strong>Email</strong>
-                    <p>omarchapas@yahoo.com.ar</p>
+                    <p>[mail]</p>
                 </div>
             </div>
         </div>
